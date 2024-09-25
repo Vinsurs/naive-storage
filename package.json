@@ -1,0 +1,40 @@
+{
+  "name": "naive-storage",
+  "version": "1.0.1",
+  "description": "A tiny common wrapper for storage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinsurs/naive-storage.git"
+  },
+  "main": "dist/naive-storage.umd.js",
+  "module": "dist/naive-storage.es.js",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/naive-storage.umd.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/naive-storage.es.js",
+      "require": "./dist/naive-storage.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "ls",
+    "naive-storage",
+    "storage",
+    "store"
+  ],
+  "author": "vinsurs <2407232109@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
+  }
+}
